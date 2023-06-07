@@ -1,4 +1,71 @@
+html{
+    height:100%;
+    background-image: url(./lone-tree.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
 body{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 100%;
+    width: auto;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px; 
+    background-color: rgba(0, 0, 0, .5);
+}
+
+body>*{
+    margin-bottom: 30px;
+}
+#pageTitle{
+    align-self: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color:white;
+    padding: 1rem;
+    justify-self: center;
+}
+
+#Todays-Weather{
     display: flex;
     flex-direction: column;
+    width: 700px;
+    color:white;
+    align-self: center;
+    align-items: start;
+    padding: 1rem;
+    line-height: 2;
+}
+#title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.weatherData{
+    display:flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.weeksWeather{
+    color:white;
+    width: 100%;
+}
+
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+ul>*{
+    line-height: 2;
 }
